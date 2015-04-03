@@ -1,0 +1,14 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index(userID: String, pageNum : Int , pageSize : Int)
+#GET     /                           controllers.Application.index(itemID : Int, userID: String, pageNum : Int , pageSize : Int)
+#GET     /                           controllers.Application.index
+#GET     /                           controllers.Application.index(itemID : Int)
+#GET     /                           controllers.Application.index(itemID : Int, userID: String)
+#GET     /                           controllers.Application.index(itemID : Option[Int], userID: String, pageNum : Option[Int] ?=0 , pageSize : Option[Int] ?= 5)
+#GET     /userID=:userID&pageNum=:pageNum&pageSize=:pageSize              controllers.Application.index(userID: String,pageNum : Int, pageSize : Int)
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
